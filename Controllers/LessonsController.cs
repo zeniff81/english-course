@@ -222,11 +222,6 @@ namespace backend2.Controllers
                 }
                 _context.SaveChanges();
 
-
-                // System.IO.File.Delete(filepath);
-
-
-
                 return await _context.Lessons                
               .Include(lesson => lesson.Flashcards)
               .Include(lesson => lesson.Listens)
