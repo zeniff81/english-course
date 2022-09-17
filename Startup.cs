@@ -70,7 +70,7 @@ namespace DotnetReact
 
             app.UseRouting();
             app.UseCors(options => options
-                .WithOrigins("*", "http://localhost:3000")
+                .WithOrigins("*", "http://localhost:3000", "http://www.zeniff-webapp.somee.com")
                 .AllowAnyMethod()
                 .AllowAnyHeader()
             );

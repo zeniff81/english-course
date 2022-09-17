@@ -223,7 +223,7 @@ namespace backend2.Controllers
                 _context.SaveChanges();
 
 
-                System.IO.File.Delete(filepath);
+                // System.IO.File.Delete(filepath);
 
 
 
