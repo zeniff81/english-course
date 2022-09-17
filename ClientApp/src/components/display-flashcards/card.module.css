@@ -1,0 +1,56 @@
+.card{
+  border: 1px solid gray;
+  cursor: pointer;
+  height: 200px;
+  margin: 10px;
+  position: relative;
+  width: 140px;
+  overflow: hidden;
+  transition: all 100ms;
+}
+
+.card:hover{
+  box-shadow: 0px 0px 7px red;
+}
+
+.cardFront{
+  font-size: 20px;
+  text-align: center;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+.cardFront img{
+  height: auto;
+  width: 100%;
+}
+
+.cardBack{
+  font-size: 20px;
+  text-align: center;
+  display: none;
+}
+
+.text{
+  width: 100%;
+  height: 85%;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  position: absolute;
+}
+
+.image{
+  position: absolute;
+  top: 0;
+  background: white;
+  height: 87%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

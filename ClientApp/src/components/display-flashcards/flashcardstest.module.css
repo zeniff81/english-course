@@ -1,0 +1,231 @@
+.container {
+  align-items: flex-start;
+  display: flex;  
+  flex-wrap: wrap;  
+  gap: 2rem;
+  justify-content: center;
+  margin: 1rem;
+  position: relative;
+}
+
+.container h3{
+  text-align: center;
+  width: 100%;
+}
+
+.optionsContainer{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.card {
+  align-items: center;
+  display: flex; 
+  height: 200px;  
+  justify-content: center;
+  outline: solid 3px #dedede;
+  overflow: hidden;
+  padding: 1rem;
+  position: relative;
+  text-align: center;
+  transition: all 500ms;
+  width: 140px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card:hover {
+  outline: solid 3px green;
+}
+
+.card img {
+  position: absolute;
+  transition: opacity 250ms;
+  transition-timing-function: cubic-bezier(0, 0, 1, 1);
+}
+
+.cardText {
+  position: absolute;
+  transform: rotateY(180deg)
+}
+
+
+.cardImg {
+  opacity: 0;
+}
+
+.correctcard {
+  outline: solid 3px green;
+}
+
+.cardFlipped {
+  transform: rotateY(180deg)
+}
+
+.feedback{
+  position: absolute; 
+  top: 40%;
+  left: 43%;
+  transition: all 200ms;
+  opacity: 0;
+  transform: translateY(2rem);
+}
+
+.feedback img{
+  width: 4rem;
+}
+
+.showFeedback{
+  opacity: 1;
+  transform: translateY(0)
+}
+
+
+.nextBtn {
+  background: green;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  opacity: 0;
+  width: 100px;
+}
+
+.showNextBtn{
+  /* display: none; */
+  animation: animateShowNextBtn 600ms 500ms forwards;
+}
+
+@keyframes animateShowNextBtn {
+  from {
+    display: block;
+    opacity: 0;
+    transform: translateX(-2rem);
+  }
+  to {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.nextBtn:hover {
+  filter: brightness(90%)
+}
+
+.nextBtn:active {
+  transform: scale(0.95);
+}
+
+
+@keyframes moveAround {
+  from {
+    transform: rotate(-5deg) scale(1)
+  }
+
+  to {
+    transform: rotate(5deg) scale(1.6)
+  }
+}
+
+@keyframes rotateInfinite {
+  from {
+    transform: rotate(0)
+  }
+
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+@keyframes showWrongAnimate {
+  0% {
+    transform: rotate(0) scale(1)
+  }
+
+  30% {
+    transform: rotate(0) scale(1)
+  }
+
+  31% {
+    transform: rotate(-20deg) scale(1.7)
+  }
+
+  60% {
+    transform: rotate(-20deg) scale(1.7)
+  }
+
+  61% {
+    transform: rotate(30deg) scale(2.3)
+  }
+
+  90% {
+    transform: rotate(30deg) scale(2.3)
+  }
+
+  100% {
+    transform: rotate(0deg) scale(2.3)
+  }
+}
+
+.counter {
+  align-items: center;
+  animation: animateCounter 3s alternate infinite;
+  background: green;
+  border-radius: 50%;
+  border: solid 2px white;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Times New Roman', Times, serif;
+  gap: 0.5rem;
+  height: 71px;
+  width: 72px;
+  z-index: 5;
+}
+
+.counter::before {
+  content: '';
+  border: solid 3px orange;
+  width: 68px;
+  height: 68px;
+  position: absolute;
+  border-radius: 50%;
+  top: 0px;
+  left: 0px;
+}
+
+.counter::after {
+  content: '';
+  border: solid 3px white;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  border-radius: 50%;
+  top: -4px;
+  left: -3px;
+}
+
+.counterCaption {
+  color: yellow;
+  transform: translateY(12px);
+}
+
+.counterNumber {
+  font-weight: bold;
+  font-size: 1.8rem;
+  transform: translateY(5px);
+}
+
+@keyframes animateCounter {
+  from {
+    transform: scale(1) rotate(-3deg);
+  }
+
+  to {
+    transform: scale(1.2) rotate(3deg);
+  }
+}

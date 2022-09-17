@@ -1,0 +1,19 @@
+.modalManager{
+  align-items: center;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  height: 100vh;
+  position: fixed;
+  width: 100vw;
+}
+
+input{
+  border-radius: 15px;  
+  border: 1px solid gray;
+  color: gray;
+  text-align: center;
+  background: #dedede;
+}

@@ -1,0 +1,95 @@
+.container{
+  width: 100%;
+  border: solid 2px rgba(0,0,0,0.0) !important;
+  margin: 0;
+  position: relative;
+  border: 1px solid blue;  
+}
+
+.container:hover .sentence{
+  transform:  translate(1rem, -.5rem);
+  border: solid 3px red;
+  box-shadow: 0px 0px 5px red;  
+  animation: glow 1s infinite;
+  pointer-events: none;
+}
+
+.container:hover .questionmark{
+  transform: translate(-.6rem, .2rem) rotate(0);
+  opacity: 1;
+}
+
+.sentence{
+  transition: all 70ms;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  width: 100%;
+  border: solid 2px rgba(0,0,0,0.0) !important;
+  margin: 0;
+  position: relative;
+  border: 1px solid blue;
+  display: flex; 
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+
+.questionmark{
+  align-items: center;
+  background-color: cornflowerblue;
+  border-radius: 50%;
+  border: solid 1px;  
+  bottom: 0;
+  color: white;  
+  display: flex;
+  flex: 1;
+  height: 1.5rem;
+  justify-content: center;
+  left: 0;  
+  opacity: 0;
+  position: absolute;
+  transform: rotate(90deg);
+  transition: all 200ms;
+  width: 1.5rem;
+}
+.questionmark:hover{
+}
+
+.text{
+  width: 85%;
+  line-height: 1.5rem;
+}
+
+.playslowicon{
+  position:absolute;
+  top: .4rem;
+  right: .4rem;
+  font-size: 1.2rem;
+  transition: all 200ms;
+}
+
+.playslowicon:hover{
+  transform: scale(1.7)
+}
+
+
+.metainfo{
+  position: absolute; 
+  top: 0; 
+  right: 0;
+  font-size: 0.7rem;
+}
+
+@keyframes glow{
+  0%{
+    box-shadow: 0px 0px 5px red;
+  }
+  50%{
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.0);
+  }
+  100%{
+    box-shadow: 0px 0px 5px red;
+  }
+}

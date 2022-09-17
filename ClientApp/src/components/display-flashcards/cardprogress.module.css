@@ -1,0 +1,33 @@
+.cardprogress{
+  display: flex;
+  margin: 0 1rem;
+}
+
+.categorycontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.label{
+  font-size: 0.8rem;
+}
+
+.button{
+  box-shadow: 1px 1px 1px gray;
+  border: none;
+  height: 30px;
+  width: 30px;
+  margin: 0 1rem;
+}
+
+.right{
+  background: #5bc7a5;
+}
+.unknown{
+  background: #f0d4a1;
+}
+.wrong{
+  background: #f0a3a1;
+}

@@ -1,0 +1,27 @@
+.container{  
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;  
+  position: relative;
+  width: 100%;
+}
+
+.title{  
+  color: gray;
+  display: flex; 
+  font-size: 3rem;
+  font-weight: bold;
+  justify-content: center;  
+  text-align: center;
+  width: 100%;
+  
+}
+
+.cover{  
+  height: 50px;
+  position: absolute;
+  transform: translateY(4rem);
+  width: 100%;
+}

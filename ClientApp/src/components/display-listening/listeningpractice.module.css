@@ -1,0 +1,9 @@
+.container{
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  height: calc(100% - 15px);
+  justify-content: center;
+  overflow: auto;
+  width: 100%;
+}

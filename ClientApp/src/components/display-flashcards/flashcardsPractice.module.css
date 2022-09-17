@@ -1,0 +1,90 @@
+.container{
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  height: calc(100% - 15px);
+  justify-content: center;
+  overflow: auto;
+  width: 100%;
+  position: relative;
+  padding-top: 1rem;
+}
+
+.header{
+  align-items: center;  
+  background: pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0.5rem ;
+  position: relative;
+  width: 100%;
+  
+}
+
+.prompt{  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+  margin: .5rem 1rem;  
+  text-align: center;
+  width: 100%;  
+}
+
+.prompt h1{
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+ol{
+  text-align: left;
+}
+
+.title{
+  height: 100%;
+  width: 100%;
+  font-size: 1.5rem;  
+}
+
+.actions{    
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;    
+}
+
+.flipall{
+  align-items: center;
+  background: none;
+  border: solid 1px;
+  border-bottom-color: gray;
+  border-left-color: white;
+  border-right-color: gray;
+  border-top-color: white;
+  cursor: pointer;
+  display: flex;
+  font-size: 1.5rem;
+  height: 33px;
+  justify-content: center;
+  margin-top: 10px;
+  width: 33px;
+}
+
+.flipall:active{
+  border-left-color: gray;
+  border-top-color: gray;
+  border-right-color: white;
+  border-bottom-color: white;
+  transform: scale(0.9);
+}
+
+.allcompleted{
+  font-size: 3rem;
+  transform: translateY(3rem);
+  color: rgb(85, 119, 34);
+  width: 100%;
+  text-align: center;
+  padding: 2rem 0;
+}

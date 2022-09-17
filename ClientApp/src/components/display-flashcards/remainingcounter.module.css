@@ -1,0 +1,58 @@
+.counter {
+  align-items: center;
+  animation: animateCounter 3s alternate infinite;
+  background: green;
+  border-radius: 50%;
+  border: solid 2px white;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Times New Roman', Times, serif;
+  gap: 0.5rem;
+  height: 71px;
+  width: 72px;
+  z-index: 5;
+}
+
+.counter::before {
+  content: '';
+  border: solid 3px orange;
+  width: 68px;
+  height: 68px;
+  position: absolute;
+  border-radius: 50%;
+  top: 0px;
+  left: 0px;
+}
+
+.counter::after {
+  content: '';
+  border: solid 3px white;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  border-radius: 50%;
+  top: -4px;
+  left: -3px;
+}
+
+.counterCaption {
+  color: yellow;
+  transform: translateY(12px);
+}
+
+.counterNumber {
+  font-weight: bold;
+  font-size: 1.8rem;
+  transform: translateY(5px);
+}
+
+@keyframes animateCounter {
+  from {
+    transform: scale(1) rotate(-3deg);
+  }
+
+  to {
+    transform: scale(1.2) rotate(3deg);
+  }
+}
