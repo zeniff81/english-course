@@ -2,9 +2,6 @@ import React from 'react'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import LessonsClient from '../../client/LessonsClient'
-import {ExcelRenderer, OutTable} from 'react-excel-renderer';
-
-
 
 const UpdateWithExcel = () => {
   const [file, setFile] = useState(null)
@@ -29,18 +26,6 @@ const UpdateWithExcel = () => {
     }catch (e){
       throw new Error(`UpdateWithExcel --> updateLessonsXLS:  Request failed`); 
     }
-
-    // console.log(ExcelRenderer)
-
-    // ExcelRenderer(file, (err, resp)=>{
-    //   if(err){
-    //     console.log(err)
-    //   }else{
-    //     console.table(resp)
-    //     console.table(file)
-    //   }
-    // })
-
   }
 
   return (

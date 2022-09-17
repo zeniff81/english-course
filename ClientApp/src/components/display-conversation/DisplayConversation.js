@@ -11,8 +11,8 @@ import popSoundFx from '../../resources/audio/ui-fx/pop.mp3';
 
 
 const DisplayConversation = () => {
-  const { currentLesson, loading } = useContext(LessonsContext)
-  const [audioSource, setAudioSource] = useState(`/audio/conversation${currentLesson.lessonId}.mp3`)
+  const { currentLesson } = useContext(LessonsContext)
+  const [audioSource] = useState(`/audio/conversation${currentLesson.lessonId}.mp3`)
   const [playing, setPlaying] = useState(false)
   const audioRef = useRef(null)
   const [playPop] = useSound(popSoundFx)

@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import logo from '../../../logo.png'
 import styles from "./header.module.css"
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { LessonsContext } from '../../../context/lessons/LessonsContext'
 
 

@@ -9,7 +9,7 @@ import popSoundFx from '../../../resources/audio/ui-fx/pop.mp3';
 
 
 const Task = ({task}) => {  
-  const { title, background, color } = task
+  const { title, background } = task
   const navigate = useNavigate()
   const location = useLocation()
   const { setCurrentTask } = useContext(LessonsContext)

@@ -3,9 +3,6 @@ import ListenSpanish from './listen-spanish'
 import styles from './sentence.module.css'
 import {MdSlowMotionVideo} from 'react-icons/md'
 
-var timerShowTranslation;
-
-
 const Sentence = ({ groupIndex, sentence, sentenceIndex, playSound, translation }) => {
 
 const [showTranslation, setShowTranslation] = useState(true)
