@@ -1,6 +1,6 @@
 {
   "name": "frontend",
-  "proxy": "http://zeniff-webapp.somee.com/",
+  "proxy": "http://www.dotnet-english.somee.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

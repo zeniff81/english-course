@@ -47,7 +47,7 @@ namespace DotnetReact
             {
                 configuration.RootPath = "ClientApp/build";
             });
-            
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -70,18 +70,18 @@ namespace DotnetReact
 
             app.UseRouting();
             app.UseCors(options => options
-                .WithOrigins("*", "http://localhost:3000", "http://www.zeniff-webapp.somee.com")
+                .WithOrigins("*", "http://localhost:3000", "http://www.dotnet-english.somee.com/home")
                 .AllowAnyMethod()
                 .AllowAnyHeader()
             );
-            
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller}/{action=Index}/{id?}");
             });
-            
+
             app.UseSpa(spa =>
             {
                 spa.Options.SourcePath = "ClientApp";

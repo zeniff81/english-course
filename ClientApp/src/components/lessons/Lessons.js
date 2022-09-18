@@ -28,7 +28,7 @@ const Lessons = () => {
   return (
     <div className={styles.container}>
       <Title title="lecciones" />
-      {lessons !== null && lessons !== 'undefined' && lessons.map(lesson => {
+      {lessons?.length && lessons.map(lesson => {
         return (
           <Link
             to={`/lessons/${lesson.lessonId}/tasks/`}
